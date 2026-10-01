@@ -218,3 +218,5 @@ When you make edits to components or styles:
 ---
 
 *© 2026 Satarupa Dutta. All Rights Reserved.*
+#   S A T A R U P A - p o r t f o l i o  
+ 
