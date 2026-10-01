@@ -40,6 +40,7 @@ function satarupaBannerPlugin() {
 }
 
 export default defineConfig({
+  base: './',
   plugins: [react(), satarupaBannerPlugin()],
   server: {
     host: true, // Exposes Network / Local IP address (e.g. 192.168.1.3)
