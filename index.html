@@ -30,6 +30,19 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Automatically detect if opened via Live Server (Go Live on port 5500/5501) or GitHub Pages root without Vite dev server
+      (function() {
+        var isDevPort = window.location.port === '3000' || window.location.port === '5173';
+        var isLiveServer = window.location.port === '5500' || window.location.port === '5501';
+        var isStaticHost = window.location.hostname.endsWith('github.io') || window.location.protocol === 'file:';
+        
+        if ((isLiveServer || isStaticHost) && !isDevPort && window.location.pathname.indexOf('/dist') === -1) {
+          var target = window.location.pathname.replace(/\/?(index\.html)?$/, '') + '/dist/index.html' + window.location.search + window.location.hash;
+          window.location.replace(target);
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

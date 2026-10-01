@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
+import satarupaPhoto from '../assets/satarupa.jpg';
 
 const NAV_LINKS = [
   { name: 'HOME', href: '#hero' },
@@ -82,22 +83,27 @@ export default function Navbar() {
         >
           <div
             style={{
+              position: 'relative',
               width: '42px',
               height: '42px',
-              borderRadius: '10px',
-              background: 'linear-gradient(135deg, rgba(197, 160, 89, 0.18), rgba(216, 164, 155, 0.1))',
-              border: '1px solid rgba(197, 160, 89, 0.35)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontFamily: 'var(--font-display)',
-              fontWeight: 700,
-              fontSize: '1.15rem',
-              color: 'var(--champagne-gold-light)',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.25)'
+              borderRadius: '50%',
+              padding: '2px',
+              background: 'linear-gradient(135deg, var(--champagne-gold), var(--dusty-rose))',
+              boxShadow: '0 4px 15px rgba(197, 160, 89, 0.35)',
+              flexShrink: 0
             }}
           >
-            SD
+            <img
+              src={satarupaPhoto}
+              alt="Satarupa Dutta"
+              style={{
+                width: '100%',
+                height: '100%',
+                borderRadius: '50%',
+                objectFit: 'cover',
+                display: 'block'
+              }}
+            />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <span

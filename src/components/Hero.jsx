@@ -1,6 +1,7 @@
 import React from 'react';
-import { ArrowRight, Mail, Compass, MapPin, Building2, Calendar } from 'lucide-react';
+import { ArrowRight, Mail, Compass, MapPin, Building2, Calendar, Sparkles } from 'lucide-react';
 import HeroScene from './3d/HeroScene';
+import satarupaPhoto from '../assets/satarupa.jpg';
 
 export default function Hero() {
   const scrollTo = (id) => {

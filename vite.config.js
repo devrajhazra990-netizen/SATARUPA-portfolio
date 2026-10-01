@@ -41,6 +41,7 @@ function satarupaBannerPlugin() {
 
 export default defineConfig({
   base: '/ SATARUPA-DUTTA-3D-PORTFOLIO /',
+  base: './',
   plugins: [react(), satarupaBannerPlugin()],
   server: {
     host: true, // Exposes Network / Local IP address (e.g. 192.168.1.3)
